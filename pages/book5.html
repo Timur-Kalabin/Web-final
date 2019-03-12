@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Gutenberg</title>
+<meta charset="utf-8">
+<meta htt-equiv="Content-Type" content="text/html">
+<meta name="author" content="Kalabin Timour">
+<meta name="description" content="Электронные книги Gutenberg">
+<meta name="keywords" content="Gutenberg">
+<link rel="shortcut icon" href="../assets/PGL.png" type="assets/png">
+<!— Bootstrap CSS —>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../styles/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+
+	<div class="header">
+	    <nav class="navbar fixed-top navbar-dark" style="background:rgb(241, 157, 29);">
+	      <div class="sidebar-header logo">
+	           <a href="../index.html"><img width="70" height="70" src="../assets/PGL.png" alt="PGL"></a>
+	       </div>
+
+	       <form>
+	           <div class=" px-3 butt">
+	               <input type="text"  placeholder="поиск" name="search" class="round" />
+	               <button type="submit" value = '' class="fas fa-search fa-spin" >
+	           </div>
+	       </form>
+
+	       <ul class="navbar-nav flex-row d-none d-sm-flex">
+	           <li class="nav-item d-sm-none d-lg-block col"><a class="nav-link active" href="../index.html">Главная</a></li>
+	           <li class="nav-item d-sm-none d-lg-block col"><a class="nav-link" href="../pages/news.html">Новости</a></li>
+	           <li class="nav-item d-sm-none d-lg-block"><a class="nav-link " href="../pages/inform.html">Информация о компании</a></li>
+	       </ul>
+
+	       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+	           <span class="navbar-toggler-icon"></span>
+	       </button>
+
+	      <div id="navbar" class="collapse navbar-collapse pt-3 col-12 ">
+	        <div class="container">
+	            <div id="navbar-sections">
+	              <div class="row">
+	                <div class="p-2 col-12">
+	                  <a class="hbtn" href="../index.html">Главная страница</a>
+	                </div>
+
+	                <div class="p-2 col-lg-6 col-md-6 col-sm-12">
+	                  <a class="hbtn" href="../index.html#Help">Помощь</a>
+	                </div>
+
+									<div class="p-2 col-lg-6 col-md-6 col-sm-12">
+	                  <a class="hbtn" href="../index.html#inf">Информационные ссылки</a>
+	                </div>
+
+	                <div class="p-2 col-lg-6 col-md-6 col-sm-12">
+	                  <a class="hbtn" href="../index.html#expl">Условия экслуатации</a>
+	                </div>
+
+	                <div class="p-2 col-lg-12 col-md-12 col-sm-12">
+	                  <a class="hbtn" href="../pages/inform.html">Информация о компании</a>
+	                </div>
+
+	                <div class="p-2 col-lg-12 col-md-12 col-sm-12">
+	                  <a class="hbtn" href="../pages/news.html">Новости</a>
+	                </div>
+	              </div>
+	            </div>
+	        </div>
+	      </div>
+	    </nav>
+	</div>
+
+<div class="container-fluid text">
+
+	<div class="container col mb-4">
+				<h1>Новости</h1><hr>
+	</div>
+
+	<div class="container col ">
+				<h2>«Заклинание сатаны» - книга Умберто Эко.</h2><hr>
+	</div>
+
+	<div class="container col mb-4">
+		<div class="row" style="background:;">
+			<div class=" px-3">
+					<img  width="200" height="300" src="../assets/Satan'sspell.jpg" title="«Заклинание сатаны» - книга Умберто Эко.">
+			</div>
+
+			<div class="container col">
+					<div class=" text  ">«Заклинание сатаны» - книга Умберто Эко.</div>
+
+					<div class=""><hr></div>
+
+					<div class="text text-justify" id = "app4">{{message}}</div>
+			</div>
+		</div>
+	</div>
+
+	<hr><h2>Комментарии</h2><hr>
+
+		<div id="disqus_thread"></div>
+			<script>
+				(function() {
+						var d = document, s = d.createElement('script');
+
+						s.src = 'https://web-3-disqus-com.disqus.com/embed.js';
+
+						s.setAttribute('data-timestamp', +new Date());
+
+						(d.head || d.body).appendChild(s);
+
+					})();
+			</script>
+</div>
+
+<div class="container col" style="background:#dddddd">
+	<div class="row">
+		<div class="col-10">
+		<h4>Контакты:</h4>
+			<ul class="list-unstyled list-inline">
+			  <li class="list-inline-item">
+			  	<p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+			  </li>
+
+			  <li class="list-inline-item">
+			  	<p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+			  </li>
+
+			  <li class="list-inline-item">
+			  	<p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="col">
+			<h4>Поделиться:</h4>
+			  <ul class="list-unstyled list-inline">
+			    <li class="list-inline-item">
+			     	<a href="#">
+			      	<i id="social-fb" class="fab fa-facebook-square fa-2x social"></i>
+			    	</a>
+			    </li>
+
+			    <li class="list-inline-item">
+			      <a href="#">
+			      	<i id="social-tw" class="fab fa-twitter-square fa-2x social"></i>
+			    	</a>
+			    </li>
+
+			    <li class="list-inline-item">
+			      <a href="#">
+			      	<i id="social-gp" class="fab fa-google-plus-square fa-2x social"></i>
+			    	</a>
+			  	</li>
+				</ul>
+			<div class="copy"> &copy; Project Gutenberg</div>
+		</div>
+	</div>
+</div>
+
+         <!— Optional JavaScript —>
+         <!— jQuery first, then Popper.js, then Bootstrap JS —>
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+         <script src="../scripts/news.js"></script>
+
+</body>
+
+</html>
